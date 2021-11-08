@@ -13,6 +13,7 @@ app = FastAPI()
 origins = [
     "http://localhost",
     "http://localhost:3000",
+    "https://fronend-web-app.herokuapp.com/",
 ]
 app.add_middleware(
     CORSMiddleware,
@@ -23,8 +24,8 @@ app.add_middleware(
 )
 
 
-MODEL= tf.keras.models.load_model("./potatoes.h5")
-CLASS_NAMES =["Early Bright","Healthy","Late Blight"]
+MODEL= tf.keras.models.load_model("./flower_model.h5")
+CLASS_NAMES =["Daisy","Dandelion","Rose","SunFlower","Tulip"]
 
 
 
