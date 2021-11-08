@@ -1,11 +1,10 @@
-tensorflow==2.5.0
+tensorflow -cpu
 fastapi
 uvicorn
 python-multipart
 pillow
-tensorflow-serving-api==2.5.0
 matplotlib
 numpy
-gunicorn==19.9.0
+gunicorn==21.1.0
 uvloop
 httptools
