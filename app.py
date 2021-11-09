@@ -14,6 +14,7 @@ origins = [
     "http://localhost",
     "http://localhost:3000",
     "https://fronend-web-app.herokuapp.com/",
+    "https://frontend-web-app.herokuapp.com",
 ]
 app.add_middleware(
     CORSMiddleware,
